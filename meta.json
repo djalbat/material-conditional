@@ -1,0 +1,6 @@
+{
+  "dependencies": [
+    "propositional-logic",
+    "de-morgans-laws"
+  ]
+}
