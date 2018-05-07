@@ -1,4 +1,4 @@
-Rule (LogicalConsequenceImpliesTheMaterialConditional)
+Rule (LogicalConsequenceInfersMaterialConditional)
   Premise
     P=>Q
   Conclusion
@@ -17,12 +17,12 @@ Rule (LogicalConsequenceImpliesTheMaterialConditional)
     Hence
       ¬P∨Q by ConjunctionIntroduction
     ¬P=>¬P∨Q
-    P∨¬P by TheLawOfTheExludedMiddle
+    P∨¬P by LawOfTheExludedMiddle
     ¬P∨Q by ConstructiveDilemma
   Therefore
     P->Q by StrongerMaterialConditionalIntroduction
 
-Rule (TheMaterialConditionalImpliesLogicalConsequence)
+Rule (MaterialConditionalInfersLogicalConsequence)
   Premise
     P->Q
   Conclusion
