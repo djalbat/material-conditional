@@ -1,3 +1,7 @@
 {
+  "dependencies": [
+    "classical-propositional-logic",
+    "de-morgans-laws"
+  ],
   "repository": "https://github.com/jecs-imperial/material-conditional"
 }
