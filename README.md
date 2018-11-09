@@ -50,5 +50,5 @@ Secondly, although the divers and subtle meanings of implication are often dispu
 
 ## Contact
 
-* jecs@imperial.ac.uk
+* james.smith@openmathematics.org
 * http://djalbat.com
