@@ -1,11 +1,11 @@
 Rule (MaterialConditionalIntroduction)
   Premise
-    ¬(P∧¬Q)
+    ¬(P ∧ ¬Q)
   Conclusion
-    P->Q
+    P -> Q
 
 Rule (MaterialConditionalElimination)
   Premise
-    P->Q
+    P -> Q
   Conclusion
-    ¬(P∧¬Q)
+    ¬(P ∧ ¬Q)

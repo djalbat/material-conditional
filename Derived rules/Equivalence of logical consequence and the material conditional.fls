@@ -1,0 +1,42 @@
+Rule (LogicalConsequenceInfersMaterialConditional)
+  Premise
+    P => Q
+  Conclusion
+    P -> Q
+  Proof
+    Suppose
+      P
+    Then
+      P => Q
+      Q by ModusPonens
+    Hence
+      ¬P ∨ Q by ConjunctionIntroduction
+    P => (¬P ∨ Q)
+    Suppose
+      ¬P
+    Hence
+      ¬P ∨ Q by ConjunctionIntroduction
+    ¬P => (¬P ∨ Q)
+    P ∨ ¬P by LawOfTheExludedMiddle
+    ¬P ∨ Q by ConstructiveDilemma
+  Therefore
+    P -> Q by StrongerMaterialConditionalIntroduction
+
+Rule (MaterialConditionalInfersLogicalConsequence)
+  Premise
+    P -> Q
+  Conclusion
+    P => Q
+  Proof
+    Suppose
+      P
+    Then
+      P -> Q
+      ¬P ∨ Q by StrongerMaterialConditionalElimination
+      P ∧ (¬P ∨ Q)
+      (P ∧ ¬P) ∨ (P ∧ Q)
+      P ∧ Q
+    Hence
+      Q
+  Therefore
+    P=>Q
