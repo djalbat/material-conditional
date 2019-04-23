@@ -1,6 +1,6 @@
 # The Material Conditional
 
-The material conditional for the [Occam](http://djalbat.com/occam) proof assistant.
+The material conditional for the [Occam](http://occam.science) proof assistant.
 
 The are two rules that effectively define the statement $P\to{Q}$ as being equivalent to $\neg(P\land\neg{Q})$. Specifically:
 
@@ -33,7 +33,7 @@ As well as these rules there are derived rules that rely on the above, plus rule
 
 ## Notes
 
-* To define the material conditional in anything other than a classical context is problematic. 
+To define the material conditional in anything other than a classical context is problematic. 
 The pitfall is avoided here because there is a dependency on the propositional logic package, which effectively means a dependency on classical logic. 
 
 The problem is that whilst $P\to{Q}$ is defined here as being equivalent to $\neg{P}\lor{Q}$, this is not the case in minimal or intuitionistic logic defined in the Hilbert style. 
