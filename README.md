@@ -33,8 +33,7 @@ As well as these rules there are derived rules that rely on the above, plus rule
 
 ## Notes
 
-To define the material conditional in anything other than a classical context is problematic. 
-The pitfall is avoided here because there is a dependency on the propositional logic package, which effectively means a dependency on classical logic. 
+To define the material conditional in anything other than a classical context is problematic, hence the dependency on the classical propositional logic package. 
 
 The problem is that whilst $P\to{Q}$ is defined here as being equivalent to $\neg{P}\lor{Q}$, this is not the case in minimal or intuitionistic logic defined in the Hilbert style. 
 In this style, just as for the logical connectives for disjunction $\lor$, conjunction $\land$ and falsum $\bot$, the logical connective for implication $\to$ is a primitive of the language and is not defined by way of an introduction rule, in fact it cannot be defined in terms of $\lor$, $\land$ and $\bot$ at all.
