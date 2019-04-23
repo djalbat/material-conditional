@@ -39,8 +39,7 @@ The problem is that whilst $P\to{Q}$ is defined here as being equivalent to $\ne
 In this style, just as for the logical connectives for disjunction $\lor$, conjunction $\land$ and falsum $\bot$, the logical connective for implication $\to$ is a primitive of the language and is not defined by way of an introduction rule, in fact it cannot be defined in terms of $\lor$, $\land$ and $\bot$ at all.
 
 It could be argued that $\to$ defined here is not the same as $\to$ defined in Hilbert-style minimal and intuitionistic logics. 
-Indeed, $\to$ in the Hilbert style is more akin to $\Rightarrow$ defined here, or rather in the propositional logic package, using the natural deductive style. 
-For example, both are commonly referred to as logical consequence. 
+Indeed, $\to$ in the Hilbert style is more akin to logical consequence $\Rightarrow$ in the natural deductive style. 
 Such comparisons between variants of implication across logics are fraught, however, and are best avoided.
 
 So why define the material conditional $\to$ here at all? 
