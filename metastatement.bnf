@@ -1,0 +1,9 @@
+
+     metaMaterialConditional      ::=   metastatement "->" metastatement ;
+
+
+     metastatement                ::=   metaMaterialConditional
+     
+                                    ;
+
+ 
