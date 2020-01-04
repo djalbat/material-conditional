@@ -1,7 +1,4 @@
 
-     materialConditional      ::=   statement "->" statement ;
-
-
-     statement                ::=   materialConditional
+     statement                ::=   statement "->" statement
  
                                 ;
