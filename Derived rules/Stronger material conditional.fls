@@ -1,18 +1,18 @@
 Rule (StrongerMaterialConditionalIntroduction)
   Premise
-    ¬P ∨ Q
+    ¬P \/ Q
   Conclusion    
     P -> Q
   Proof
     Suppose
-      P ∧ ¬Q
+      P /\ ¬Q
     Then
-      ¬¬P ∧ ¬Q by DoubleNegationIntroduction
+      ¬¬P /\ ¬Q by DoubleNegationIntroduction
     Hence
-      ¬(¬P ∨ Q) by ConjunctionOfNegationsInfersNegatedDisjunction
-    (P ∧ ¬Q) => ¬(¬P∨Q)
-    ¬P ∨ Q 
-    ¬(P ∧ ¬Q) by ModusTollens
+      ¬(¬P \/ Q) by ConjunctionOfNegationsInfersNegatedDisjunction
+    (P /\ ¬Q) => ¬(¬P \/ Q)
+    ¬P \/ Q 
+    ¬(P /\ ¬Q) by ModusTollens
   Therefore
     P -> Q by MaterialConditionalIntroduction
 
@@ -20,9 +20,9 @@ Rule (StrongerMaterialConditionalElimination)
   Premise
     P -> Q
   Conclusion    
-    ¬P ∨ Q
+    ¬P \/ Q
   Proof
-    ¬(P ∧ ¬Q)
-    ¬P ∨ ¬¬Q by NegatedConjuctionInfersDisjunctionOfNegations
+    ¬(P /\ ¬Q)
+    ¬P \/ ¬¬Q by NegatedConjuctionInfersDisjunctionOfNegations
   Therefore
-    ¬P ∨ Q by DoubleNegationIntroduction
+    ¬P \/ Q by DoubleNegationIntroduction
