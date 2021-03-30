@@ -1,5 +1,5 @@
 {
-  "repository": "https://github.com/jecs-imperial/material-conditional",
+  "repository": "https://github.com/djalbat/material-conditional",
   "dependencies": [
     "classical-propositional-logic",
     "de-morgans-laws"
