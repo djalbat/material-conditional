@@ -1,6 +1,6 @@
 # The Material Conditional
 
-The material conditional for the [Occam](http://occam.science) proof assistant.
+The material conditional for [Occam](https://occam.science).
 
 The are two rules that effectively define the statement $P\to{Q}$ as being equivalent to $\neg(P\land\neg{Q})$. Specifically:
 
@@ -48,5 +48,4 @@ Secondly, although the divers and subtle meanings of implication are often dispu
 
 ## Contact
 
-* james.smith@openmathematics.org
 * http://djalbat.com
