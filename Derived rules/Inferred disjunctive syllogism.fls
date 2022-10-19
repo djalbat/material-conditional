@@ -6,17 +6,15 @@ Rule (InferredDisjunctionElimination)
   Conclusion
     R
   Proof
-    P => R
-    Q => R
     P -> R by LogicalConsequenceInfersMaterialConditional
-    Q -> R by LogicalConsequenceInfersMaterialConditional
     ¬P \/ R by StrongerMaterialConditionalElimination
+    R \/ ¬P by DisjunctionCommutes
+    Q -> R by LogicalConsequenceInfersMaterialConditional
     ¬Q \/ R by StrongerMaterialConditionalElimination
-    (¬P \/ R) /\ (¬Q \/ R) by ConjunctionIntroduction
-    (¬P /\ ¬Q) \/ R
-    P \/ Q
+    R \/ ¬Q by DisjunctionCommutes
+    (R \/ ¬P) /\ (R \/ ¬Q) by ConjunctionIntroduction
+    R \/ (¬P /\ ¬Q) by DisjunctionDistributedOverConjunction
     ¬(¬P /\ ¬Q) by DisjunctionInfersNegatedConjunctionOfNegations
-    (¬P /\ ¬Q) \/ R
-    ¬(¬P /\ ¬Q)
+    (¬P /\ ¬Q) \/ R by DisjunctionCommutes
   Therefore
     R by DisjunctiveSyllogism

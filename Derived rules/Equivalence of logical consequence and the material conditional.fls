@@ -6,19 +6,18 @@ Rule (LogicalConsequenceInfersMaterialConditional)
   Proof
     Suppose
       P
-    Then
-      P => Q
-      Q by ModusPonens
     Hence
-      ¬P \/ Q by ConjunctionIntroduction
-    P => (¬P \/ Q)
+      Q by ModusPonens
+    Therefore
+      ¬P \/ Q by DisjunctionLeftIntroduction
+    P => (¬P \/ Q) by ImplicationIntroduction
     Suppose
       ¬P
-    Hence
-      ¬P \/ Q by ConjunctionIntroduction
-    ¬P => (¬P \/ Q)
+    Therefore
+      ¬P \/ Q by DisjunctionLeftIntroduction
+    ¬P => (¬P \/ Q) by ImplicationIntroduction
     P \/ ¬P by LawOfTheExludedMiddle
-    ¬P \/ Q by ConstructiveDilemma
+    ¬P \/ Q by DisjunctionElimination
   Therefore
     P -> Q by StrongerMaterialConditionalIntroduction
 
@@ -30,13 +29,13 @@ Rule (MaterialConditionalInfersLogicalConsequence)
   Proof
     Suppose
       P
-    Then
-      P -> Q
-      ¬P \/ Q by StrongerMaterialConditionalElimination
-      P /\ (¬P \/ Q)
-      (P /\ ¬P) \/ (P /\ Q)
-      P /\ Q
     Hence
-      Q
+      ¬P \/ Q by StrongerMaterialConditionalElimination
+      P /\ (¬P \/ Q) by ConjunctionIntroduction
+      (P /\ ¬P) \/ (P /\ Q) by ConjunctionDistributesOverDisjunction
+      (P /\ Q) \/ (P /\ ¬P) by DisjunctionCommutes
+      P /\ Q by ContradictionElimination
+    Therefore
+      Q by ConjunctionLeftElimination
   Therefore
-    P=>Q
+    P => Q by ImplicationIntroduction

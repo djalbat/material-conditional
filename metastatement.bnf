@@ -1,7 +1,5 @@
 
 
-                   metastatement  ::=  metastatement "->" metastatement
-     
-                                    ;
+                   metastatement  ::=  metastatement "->" metastatement ;
 
  
