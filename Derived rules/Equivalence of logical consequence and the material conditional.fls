@@ -8,12 +8,12 @@ Rule (LogicalConsequenceInfersMaterialConditional)
       P
     Hence
       Q by ModusPonens
-    Therefore
+    Then
       ¬P \/ Q by DisjunctionLeftIntroduction
     P => (¬P \/ Q) by ImplicationIntroduction
     Suppose
       ¬P
-    Therefore
+    Then
       ¬P \/ Q by DisjunctionLeftIntroduction
     ¬P => (¬P \/ Q) by ImplicationIntroduction
     P \/ ¬P by LawOfTheExludedMiddle
@@ -35,7 +35,7 @@ Rule (MaterialConditionalInfersLogicalConsequence)
       (P /\ ¬P) \/ (P /\ Q) by ConjunctionDistributesOverDisjunction
       (P /\ Q) \/ (P /\ ¬P) by DisjunctionCommutes
       P /\ Q by ContradictionElimination
-    Therefore
+    Then
       Q by ConjunctionLeftElimination
   Therefore
     P => Q by ImplicationIntroduction

@@ -11,7 +11,7 @@ Rule (StrongerMaterialConditionalIntroduction)
       ¬Q by ConjunctionLeftElimination 
       ¬¬P by DoubleNegationIntroduction
       ¬¬P /\ ¬Q by ConjunctionIntroduction
-    Therefore
+    Then
       ¬(¬P \/ Q) by ConjunctionOfNegationsInfersNegatedDisjunction
     (P /\ ¬Q) => ¬(¬P \/ Q) by ImplicationIntroduction
     ¬¬(¬P \/ Q) by DoubleNegationIntroduction
@@ -30,7 +30,7 @@ Rule (StrongerMaterialConditionalElimination)
     ¬P => ¬P by TrivialImplication
     Suppose
       ¬¬Q
-     Therefore
+     Then
        Q by DoubleNegationElimination
     ¬¬Q => Q by ImplicationIntroduction
   Therefore
