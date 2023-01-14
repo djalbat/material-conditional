@@ -4,7 +4,7 @@ Rule (StrongerMaterialConditionalIntroduction)
   Conclusion    
     P -> Q
   Proof
-    Suppose
+    Premise
       P /\ ¬Q
     Hence
       P by ConjunctionRightElimination
@@ -28,7 +28,7 @@ Rule (StrongerMaterialConditionalElimination)
     ¬(P /\ ¬Q) by MaterialConditionalElimination
     ¬P \/ ¬¬Q by NegatedConjuctionInfersDisjunctionOfNegations
     ¬P => ¬P by TrivialImplication
-    Suppose
+    Premise
       ¬¬Q
      Then
        Q by DoubleNegationElimination

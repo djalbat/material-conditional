@@ -4,14 +4,14 @@ Rule (LogicalConsequenceInfersMaterialConditional)
   Conclusion
     P -> Q
   Proof
-    Suppose
+    Premise
       P
     Hence
       Q by ModusPonens
     Then
       ¬P \/ Q by DisjunctionLeftIntroduction
     P => (¬P \/ Q) by ImplicationIntroduction
-    Suppose
+    Premise
       ¬P
     Then
       ¬P \/ Q by DisjunctionLeftIntroduction
@@ -27,7 +27,7 @@ Rule (MaterialConditionalInfersLogicalConsequence)
   Conclusion
     P => Q
   Proof
-    Suppose
+    Premise
       P
     Hence
       ¬P \/ Q by StrongerMaterialConditionalElimination
