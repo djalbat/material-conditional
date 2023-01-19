@@ -1,3 +1,3 @@
 
 
-                       statement  ::=  metaargument "->" metaargument ;
+                       statement  ::=  metaArgument "->" metaArgument ;
