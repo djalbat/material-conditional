@@ -48,4 +48,4 @@ Secondly, although the divers and subtle meanings of implication are often dispu
 
 ## Contact
 
-* http://djalbat.com
+* https://djalbat.com
