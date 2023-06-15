@@ -3,42 +3,42 @@ Metavariable Q:Statement
 
 Rule (LogicalConsequenceInfersMaterialConditional)
   Premise
-    P => Q
+    P ⇒ Q
   Conclusion
-    P -> Q
+    P → Q
   Proof
     Premise
       P
     Hence
       Q by ModusPonens
     Then
-      ¬P \/ Q by DisjunctionLeftIntroduction
-    P => (¬P \/ Q) by ImplicationIntroduction
+      ¬P ∨ Q by DisjunctionLeftIntroduction
+    P ⇒ (¬P ∨ Q) by ImplicationIntroduction
     Premise
       ¬P
     Then
-      ¬P \/ Q by DisjunctionLeftIntroduction
-    ¬P => (¬P \/ Q) by ImplicationIntroduction
-    P \/ ¬P by LawOfTheExludedMiddle
-    ¬P \/ Q by DisjunctionElimination
+      ¬P ∨ Q by DisjunctionLeftIntroduction
+    ¬P ⇒ (¬P ∨ Q) by ImplicationIntroduction
+    P ∨ ¬P by LawOfTheExludedMiddle
+    ¬P ∨ Q by DisjunctionElimination
   Therefore
-    P -> Q by StrongerMaterialConditionalIntroduction
+    P → Q by StrongerMaterialConditionalIntroduction
 
 Rule (MaterialConditionalInfersLogicalConsequence)
   Premise
-    P -> Q
+    P → Q
   Conclusion
-    P => Q
+    P ⇒ Q
   Proof
     Premise
       P
     Hence
-      ¬P \/ Q by StrongerMaterialConditionalElimination
-      P /\ (¬P \/ Q) by ConjunctionIntroduction
-      (P /\ ¬P) \/ (P /\ Q) by ConjunctionDistributesOverDisjunction
-      (P /\ Q) \/ (P /\ ¬P) by DisjunctionCommutes
-      P /\ Q by ContradictionElimination
+      ¬P ∨ Q by StrongerMaterialConditionalElimination
+      P ∧ (¬P ∨ Q) by ConjunctionIntroduction
+      (P ∧ ¬P) ∨ (P ∧ Q) by ConjunctionDistributesOverDisjunction
+      (P ∧ Q) ∨ (P ∧ ¬P) by DisjunctionCommutes
+      P ∧ Q by ContradictionElimination
     Then
       Q by ConjunctionLeftElimination
   Therefore
-    P => Q by ImplicationIntroduction
+    P ⇒ Q by ImplicationIntroduction

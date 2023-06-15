@@ -3,38 +3,38 @@ Metavariable Q:Statement
 
 Rule (StrongerMaterialConditionalIntroduction)
   Premise
-    ¬P \/ Q
+    ¬P ∨ Q
   Conclusion    
-    P -> Q
+    P → Q
   Proof
     Premise
-      P /\ ¬Q
+      P ∧ ¬Q
     Hence
       P by ConjunctionRightElimination
       ¬Q by ConjunctionLeftElimination 
       ¬¬P by DoubleNegationIntroduction
-      ¬¬P /\ ¬Q by ConjunctionIntroduction
+      ¬¬P ∧ ¬Q by ConjunctionIntroduction
     Then
-      ¬(¬P \/ Q) by ConjunctionOfNegationsInfersNegatedDisjunction
-    (P /\ ¬Q) => ¬(¬P \/ Q) by ImplicationIntroduction
-    ¬¬(¬P \/ Q) by DoubleNegationIntroduction
-    ¬(P /\ ¬Q) by ModusTollens
+      ¬(¬P ∨ Q) by ConjunctionOfNegationsInfersNegatedDisjunction
+    (P ∧ ¬Q) ⇒ ¬(¬P ∨ Q) by ImplicationIntroduction
+    ¬¬(¬P ∨ Q) by DoubleNegationIntroduction
+    ¬(P ∧ ¬Q) by ModusTollens
   Therefore
-    P -> Q by MaterialConditionalIntroduction
+    P → Q by MaterialConditionalIntroduction
 
 Rule (StrongerMaterialConditionalElimination)
   Premise
-    P -> Q
+    P → Q
   Conclusion    
-    ¬P \/ Q
+    ¬P ∨ Q
   Proof
-    ¬(P /\ ¬Q) by MaterialConditionalElimination
-    ¬P \/ ¬¬Q by NegatedConjuctionInfersDisjunctionOfNegations
-    ¬P => ¬P by TrivialImplication
+    ¬(P ∧ ¬Q) by MaterialConditionalElimination
+    ¬P ∨ ¬¬Q by NegatedConjuctionInfersDisjunctionOfNegations
+    ¬P ⇒ ¬P by TrivialImplication
     Premise
       ¬¬Q
      Then
        Q by DoubleNegationElimination
-    ¬¬Q => Q by ImplicationIntroduction
+    ¬¬Q ⇒ Q by ImplicationIntroduction
   Therefore
-    ¬P \/ Q by ConstructiveDilemma
+    ¬P ∨ Q by ConstructiveDilemma

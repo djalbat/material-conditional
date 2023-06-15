@@ -4,21 +4,21 @@ Metavariable R:Statement
 
 Rule (InferredDisjunctionElimination)
   Premises
-    P => R
-    Q => R
-    P \/ Q
+    P ⇒ R
+    Q ⇒ R
+    P ∨ Q
   Conclusion
     R
   Proof
-    P -> R by LogicalConsequenceInfersMaterialConditional
-    ¬P \/ R by StrongerMaterialConditionalElimination
-    R \/ ¬P by DisjunctionCommutes
-    Q -> R by LogicalConsequenceInfersMaterialConditional
-    ¬Q \/ R by StrongerMaterialConditionalElimination
-    R \/ ¬Q by DisjunctionCommutes
-    (R \/ ¬P) /\ (R \/ ¬Q) by ConjunctionIntroduction
-    R \/ (¬P /\ ¬Q) by DisjunctionDistributedOverConjunction
-    ¬(¬P /\ ¬Q) by DisjunctionInfersNegatedConjunctionOfNegations
-    (¬P /\ ¬Q) \/ R by DisjunctionCommutes
+    P → R by LogicalConsequenceInfersMaterialConditional
+    ¬P ∨ R by StrongerMaterialConditionalElimination
+    R ∨ ¬P by DisjunctionCommutes
+    Q → R by LogicalConsequenceInfersMaterialConditional
+    ¬Q ∨ R by StrongerMaterialConditionalElimination
+    R ∨ ¬Q by DisjunctionCommutes
+    (R ∨ ¬P) ∧ (R ∨ ¬Q) by ConjunctionIntroduction
+    R ∨ (¬P ∧ ¬Q) by DisjunctionDistributedOverConjunction
+    ¬(¬P ∧ ¬Q) by DisjunctionInfersNegatedConjunctionOfNegations
+    (¬P ∧ ¬Q) ∨ R by DisjunctionCommutes
   Therefore
     R by DisjunctiveSyllogism
