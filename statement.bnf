@@ -1,0 +1,4 @@
+
+
+         statement  ::=   metaArgument "→" metaArgument ;
+
