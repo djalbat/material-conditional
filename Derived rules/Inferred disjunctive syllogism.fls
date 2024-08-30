@@ -10,15 +10,20 @@ Rule (InferredDisjunctionElimination)
   Conclusion
     R
   Proof
-    P → R by LogicalConsequenceInfersMaterialConditional
-    ¬P ∨ R by StrongerMaterialConditionalElimination
-    R ∨ ¬P by DisjunctionCommutes
+    Q ⇒ R
     Q → R by LogicalConsequenceInfersMaterialConditional
     ¬Q ∨ R by StrongerMaterialConditionalElimination
     R ∨ ¬Q by DisjunctionCommutes
+    P ⇒ R
+    P → R by LogicalConsequenceInfersMaterialConditional
+    ¬P ∨ R by StrongerMaterialConditionalElimination
+    R ∨ ¬P by DisjunctionCommutes
+    R ∨ ¬Q
     (R ∨ ¬P) ∧ (R ∨ ¬Q) by ConjunctionIntroduction
     R ∨ (¬P ∧ ¬Q) by DisjunctionDistributedOverConjunction
+    P ∨ Q
     ¬(¬P ∧ ¬Q) by DisjunctionInfersNegatedConjunctionOfNegations
+    R ∨ (¬P ∧ ¬Q)
     (¬P ∧ ¬Q) ∨ R by DisjunctionCommutes
   Therefore
     R by DisjunctiveSyllogism

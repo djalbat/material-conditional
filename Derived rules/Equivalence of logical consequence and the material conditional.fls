@@ -17,7 +17,7 @@ Rule (LogicalConsequenceInfersMaterialConditional)
     Premise
       ¬P
     Then
-      ¬P ∨ Q by DisjunctionLeftIntroduction
+      ¬P ∨ Q by DisjunctionRightIntroduction
     ¬P ⇒ (¬P ∨ Q) by ImplicationIntroduction
     P ∨ ¬P by LawOfTheExludedMiddle
     ¬P ∨ Q by DisjunctionElimination

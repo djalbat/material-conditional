@@ -10,13 +10,15 @@ Rule (StrongerMaterialConditionalIntroduction)
     Premise
       P ∧ ¬Q
     Hence
-      P by ConjunctionRightElimination
       ¬Q by ConjunctionLeftElimination 
+      P by ConjunctionRightElimination
       ¬¬P by DoubleNegationIntroduction
+      ¬Q
       ¬¬P ∧ ¬Q by ConjunctionIntroduction
     Then
       ¬(¬P ∨ Q) by ConjunctionOfNegationsInfersNegatedDisjunction
     (P ∧ ¬Q) ⇒ ¬(¬P ∨ Q) by ImplicationIntroduction
+    ¬P ∨ Q
     ¬¬(¬P ∨ Q) by DoubleNegationIntroduction
     ¬(P ∧ ¬Q) by ModusTollens
   Therefore
