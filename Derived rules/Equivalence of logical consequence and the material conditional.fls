@@ -7,14 +7,14 @@ Rule (LogicalConsequenceInfersMaterialConditional)
   Conclusion
     P → Q
   Proof
-    Premise
+    Suppose
       P
     Hence
       Q by ModusPonens
     Then
       ¬P ∨ Q by DisjunctionLeftIntroduction
     P ⇒ (¬P ∨ Q) by ImplicationIntroduction
-    Premise
+    Suppose
       ¬P
     Then
       ¬P ∨ Q by DisjunctionRightIntroduction
@@ -30,7 +30,7 @@ Rule (MaterialConditionalInfersLogicalConsequence)
   Conclusion
     P ⇒ Q
   Proof
-    Premise
+    Suppose
       P
     Hence
       ¬P ∨ Q by StrongerMaterialConditionalElimination

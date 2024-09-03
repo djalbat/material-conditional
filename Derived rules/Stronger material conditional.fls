@@ -7,7 +7,7 @@ Rule (StrongerMaterialConditionalIntroduction)
   Conclusion    
     P → Q
   Proof
-    Premise
+    Suppose
       P ∧ ¬Q
     Hence
       ¬Q by ConjunctionLeftElimination 
@@ -33,7 +33,7 @@ Rule (StrongerMaterialConditionalElimination)
     ¬(P ∧ ¬Q) by MaterialConditionalElimination
     ¬P ∨ ¬¬Q by NegatedConjuctionInfersDisjunctionOfNegations
     ¬P ⇒ ¬P by TrivialImplication
-    Premise
+    Suppose
       ¬¬Q
      Then
        Q by DoubleNegationElimination
