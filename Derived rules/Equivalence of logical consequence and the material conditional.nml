@@ -19,7 +19,7 @@ Rule (LogicalConsequenceInfersMaterialConditional)
     Then
       ¬P ∨ Q by DisjunctionRightIntroduction
     ¬P ⇒ (¬P ∨ Q) by ImplicationIntroduction
-    P ∨ ¬P by LawOfTheExludedMiddle
+    P ∨ ¬P by TheLawOfTheExludedMiddle
     ¬P ∨ Q by DisjunctionElimination
   Therefore
     P → Q by StrongerMaterialConditionalIntroduction
