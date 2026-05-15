@@ -10,8 +10,8 @@ Rule (StrongerMaterialConditionalIntroduction)
     Suppose
       P ∧ ¬Q
     Hence
-      ¬Q by ConjunctionLeftElimination 
-      P by ConjunctionRightElimination
+      ¬Q by ConjunctionRightElimination 
+      P by ConjunctionLeftElimination
       ¬¬P by DoubleNegationIntroduction
       ¬Q
       ¬¬P ∧ ¬Q by ConjunctionIntroduction

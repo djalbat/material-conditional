@@ -12,14 +12,14 @@ Rule (LogicalConsequenceInfersMaterialConditional)
     Hence
       Q by ModusPonens
     Then
-      ¬P ∨ Q by DisjunctionLeftIntroduction
+      ¬P ∨ Q by DisjunctionRightIntroduction
     P ⇒ (¬P ∨ Q) by ImplicationIntroduction
     Suppose
       ¬P
     Then
-      ¬P ∨ Q by DisjunctionRightIntroduction
+      ¬P ∨ Q by DisjunctionLeftIntroduction
     ¬P ⇒ (¬P ∨ Q) by ImplicationIntroduction
-    P ∨ ¬P by TheLawOfTheExludedMiddle
+    P ∨ ¬P by LawOfTheExludedMiddle
     ¬P ∨ Q by DisjunctionElimination
   Therefore
     P → Q by StrongerMaterialConditionalIntroduction
@@ -39,6 +39,6 @@ Rule (MaterialConditionalInfersLogicalConsequence)
       (P ∧ Q) ∨ (P ∧ ¬P) by DisjunctionCommutes
       P ∧ Q by ContradictionElimination
     Then
-      Q by ConjunctionLeftElimination
+      Q by ConjunctionRightElimination
   Therefore
     P ⇒ Q by ImplicationIntroduction
