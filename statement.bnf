@@ -1,4 +1,4 @@
 
 
-         statement  ::=   metaArgument "→" metaArgument ;
+         statement  ::=   metaArgument "→" ` metaArgument ;
 
